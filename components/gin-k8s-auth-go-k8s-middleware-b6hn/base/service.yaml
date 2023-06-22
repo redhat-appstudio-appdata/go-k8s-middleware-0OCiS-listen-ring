@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: gin-k8s-auth-go-k8s-middleware-b6hn
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: gin-k8s-auth-go-k8s-middleware-b6hn
+    app.kubernetes.io/part-of: go-k8s-middleware
+  name: gin-k8s-auth-go-k8s-middleware-b6hn
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: gin-k8s-auth-go-k8s-middleware-b6hn
+status:
+  loadBalancer: {}
