@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: gin-k8s-auth-go-k8s-middleware-b6hn
     app.kubernetes.io/part-of: go-k8s-middleware
-  name: gin-k8s-auth-go-k8s-middlx8kg
+  name: gin-k8s-auth-go-k8s-middlvgz3
 spec:
   path: /
   port:
