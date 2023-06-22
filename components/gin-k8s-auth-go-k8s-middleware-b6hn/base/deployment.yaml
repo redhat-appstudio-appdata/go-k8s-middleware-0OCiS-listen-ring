@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: gin-k8s-auth-go-k8s-middleware-b6hn
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/mkovarik-tenant/go-k8s-middleware/gin-k8s-auth-go-k8s-middleware-b6hn@sha256:ede99d97010e7bff79919fb2104adbf7cbcbb31a726a2fb29ec40c9f556e41aa
         name: my-go
         ports:
         - containerPort: 8081
