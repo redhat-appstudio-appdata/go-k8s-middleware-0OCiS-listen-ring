@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: go-grpc-k8s-auth-go-k8s-middleware-kgcs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-grpc-k8s-auth-go-k8s-middleware-kgcs
+    app.kubernetes.io/part-of: go-k8s-middleware
+  name: go-grpc-k8s-auth-go-k8s-middleware-kgcs
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: go-grpc-k8s-auth-go-k8s-middleware-kgcs
+status:
+  loadBalancer: {}
