@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: gin-k8s-auth-go-k8s-middleware-b6hn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mkovarik-tenant/go-k8s-middleware/gin-k8s-auth-go-k8s-middleware-b6hn@sha256:ede99d97010e7bff79919fb2104adbf7cbcbb31a726a2fb29ec40c9f556e41aa
+        name: my-go
+        resources: {}
+status: {}
